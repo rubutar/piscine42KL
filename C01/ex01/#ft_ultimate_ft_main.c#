@@ -1,27 +1,27 @@
 #include <stdio.h>
 
 void	ft_ultimate_ft(int *********nbr)
-
 {
 	*********nbr = 42;
 }
 
-int main (void)
+int	main()
 {
-	int *********nbr;
-	int ********nbr1;
-	int *******nbr2;
-	int ******nbr3;
-	int *****nbr4;
-	int ****nbr5;
-	int ***nbr6;
-	int **nbr7;
+	int n;
 	int *nbr8;
-	int num;
+	int **nbr7;
+	int ***nbr6;
+	int ****nbr5;
+	int *****nbr4;
+	int ******nbr3;
+	int *******nbr2;
+	int ********nbr1;
+	int *********nbr;
 
-	num = 1000;
 
-	nbr8 = &num;
+	n = 21;
+	
+	nbr8 = &n;
 	nbr7 = &nbr8;
 	nbr6 = &nbr7;
 	nbr5 = &nbr6;
@@ -30,8 +30,9 @@ int main (void)
 	nbr2 = &nbr3;
 	nbr1 = &nbr2;
 	nbr = &nbr1;
+	
 
 	ft_ultimate_ft(nbr);
-	printf("%d", num);
-	return(0);
+	printf("%d", n);	
+	return 0;
 }

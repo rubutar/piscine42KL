@@ -16,7 +16,7 @@ int	ft_strlen(char *str);
 
 int	main()
 {
-	char	*c = "Hello how are you";
-	printf("the length of the string is %d char", ft_strlen(c));
+  //char	*c = "Hello how are you";
+	printf("the length of the string is %d char", ft_strlen("hello how are you today"));
 	return (0);
 }

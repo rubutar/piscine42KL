@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 int	ft_strlen(char *str)
 {
 	int	i;
@@ -29,8 +30,9 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 
 int	main()
 {
-	char src[] = "World!";
-	char dest[] = "Hello ";
-	printf("%d | %s", ft_strlcpy(dest, src, 10), dest);
+	char src[] = "kok, gw pusing!";
+	char dest[] = "Hello kok gw pusing banget ya";
+	printf("%d | %s", ft_strlcpy(dest, src, 9), dest);
+	printf("%lu", strlen(dest));
 }
 

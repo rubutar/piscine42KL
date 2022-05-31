@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   ft_print_combn.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rbutarbu <rbutarbu@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/23 00:10:20 by rbutarbu          #+#    #+#             */
-/*   Updated: 2022/05/23 22:18:26 by rbutarbu         ###   ########.fr       */
+/*   Created: 2022/05/23 16:47:59 by rbutarbu          #+#    #+#             */
+/*   Updated: 2022/05/23 17:43:40 by rbutarbu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,18 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-void	ft_print_numbers(void)
+void	ft_print_combn(void)
 {
-	char	number;
+	int	a;
+	int	b;
 
-	number = '0';
-	while (number <= '9')
+	a = '0';
+	while (++a <= 9)
 	{
-		ft_putchar(number);
-		number++;
-	}
+		b = a + 1;
+		ft_putchar(a);
+		ft_putchar(b);
+		ft_putchar(',');
+		ft_putchar(' ');
+	}	
 }

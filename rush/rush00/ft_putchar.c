@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rbutarbu <rbutarbu@student.42kl.edu.my>    +#+  +:+       +#+        */
+/*   By: cocheong <cocheong@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/23 00:10:20 by rbutarbu          #+#    #+#             */
-/*   Updated: 2022/05/23 22:18:26 by rbutarbu         ###   ########.fr       */
+/*   Created: 2022/05/22 16:15:48 by cocheong          #+#    #+#             */
+/*   Updated: 2022/05/22 18:36:28 by cocheong         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,16 +15,4 @@
 void	ft_putchar(char c)
 {
 	write(1, &c, 1);
-}
-
-void	ft_print_numbers(void)
-{
-	char	number;
-
-	number = '0';
-	while (number <= '9')
-	{
-		ft_putchar(number);
-		number++;
-	}
 }

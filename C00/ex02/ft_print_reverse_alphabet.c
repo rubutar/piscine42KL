@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rbutarbu <rbutarbu@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/23 00:10:20 by rbutarbu          #+#    #+#             */
-/*   Updated: 2022/05/23 22:18:26 by rbutarbu         ###   ########.fr       */
+/*   Created: 2022/05/19 15:14:43 by rbutarbu          #+#    #+#             */
+/*   Updated: 2022/05/24 10:47:52 by rbutarbu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,14 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-void	ft_print_numbers(void)
+void	ft_print_reverse_alphabet(void)
 {
-	char	number;
+	char	letter;
 
-	number = '0';
-	while (number <= '9')
+	letter = 'z';
+	while (letter >= 'a')
 	{
-		ft_putchar(number);
-		number++;
+		ft_putchar(letter);
+		letter--;
 	}
 }

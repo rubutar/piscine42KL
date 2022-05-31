@@ -1,30 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rbutarbu <rbutarbu@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/23 00:10:20 by rbutarbu          #+#    #+#             */
-/*   Updated: 2022/05/23 22:18:26 by rbutarbu         ###   ########.fr       */
+/*   Created: 2022/05/31 15:31:25 by rbutarbu          #+#    #+#             */
+/*   Updated: 2022/05/31 16:00:18 by rbutarbu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putchar(char c)
+#include <stdio.h>
+int	ft_strlen(char *str)
 {
-	write(1, &c, 1);
+	int i = 0;
+
+	while (str[i] != '\0')
+	{	
+		i++;	
+	}
+	return (i);
 }
 
-void	ft_print_numbers(void)
+int	ft_strcmp(char *s1, char *s2)
 {
-	char	number;
+	if(ft_strlen(s1)
 
-	number = '0';
-	while (number <= '9')
-	{
-		ft_putchar(number);
-		number++;
-	}
+}
+
+int	main()
+{
+	printf("%d", ft_strlen("test"));
 }

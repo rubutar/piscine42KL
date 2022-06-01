@@ -1,17 +1,19 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: rbutarbu <rbutarbu@student.42kl.edu.my>    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/31 19:13:18 by rbutarbu          #+#    #+#             */
-/*   Updated: 2022/05/31 19:15:22 by rbutarbu         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+int	ft_strncmp(char *s1, char *s2, unsigned int n)
+{
+	unsigned int	i;
 
-#include <stdio.h>
-#include <string.h>
-
-int	ft_strncmp(char *s1, char *s2, unsigned int n);
-
+	i = 0;
+	while ((s1[i] != '\0' || s2[i] != '\0') && i < n)
+	{
+		if (s1[i] > s2[i])
+		{
+			return (1);
+		}
+		else if (s1[i] < s2[i])
+		{
+			return (-1);
+		}
+		i++;
+	}
+	return (0);
+}

@@ -1,28 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rbutarbu <rbutarbu@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/01 08:46:11 by rbutarbu          #+#    #+#             */
-/*   Updated: 2022/06/03 21:50:26 by rbutarbu         ###   ########.fr       */
+/*   Updated: 2022/06/03 21:55:12 by rbutarbu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_iterative_factorial(int nb)
-{
-	int	result;
+#include <stdio.h>
 
-	result = 1;
-	while (nb > 0 && nb < 13)
-	{
-		result *= nb;
-		nb--;
-	}
-	if ((nb < 0) || (nb > 12))
-	{
-		return (0);
-	}
-	return (result);
+int	ft_iterative_factorial(int nb);
+
+int	main (void)
+{
+	printf("%d\n", ft_iterative_factorial(13));
+	printf("%d\n", ft_iterative_factorial(12));
+	printf("%d\n", ft_iterative_factorial(-1));
+	printf("%d\n", ft_iterative_factorial(0));
 }

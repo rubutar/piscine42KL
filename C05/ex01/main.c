@@ -1,28 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rbutarbu <rbutarbu@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/01 08:46:11 by rbutarbu          #+#    #+#             */
-/*   Updated: 2022/06/03 21:50:26 by rbutarbu         ###   ########.fr       */
+/*   Created: 2022/06/01 10:17:54 by rbutarbu          #+#    #+#             */
+/*   Updated: 2022/06/03 22:19:50 by rbutarbu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_iterative_factorial(int nb)
-{
-	int	result;
+int	ft_recursive_factorial(int nb);
 
-	result = 1;
-	while (nb > 0 && nb < 13)
-	{
-		result *= nb;
-		nb--;
-	}
-	if ((nb < 0) || (nb > 12))
-	{
-		return (0);
-	}
-	return (result);
+#include <stdio.h>
+int	main()
+{
+	printf("%d \n", ft_recursive_factorial(13));
+	printf("%d \n", ft_recursive_factorial(12));
+	printf("%d \n", ft_recursive_factorial(1));
+	printf("%d \n", ft_recursive_factorial(0));
+	printf("%d \n", ft_recursive_factorial(-1));
 }
+

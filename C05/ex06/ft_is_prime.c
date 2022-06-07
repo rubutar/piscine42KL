@@ -3,34 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   ft_is_prime.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lhurt <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: rbutarbu <rbutarbu@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/07/16 15:40:23 by lhurt             #+#    #+#             */
-/*   Updated: 2016/07/16 15:40:26 by lhurt            ###   ########.fr       */
+/*   Created: 2022/06/07 11:03:12 by rbutarbu          #+#    #+#             */
+/*   Updated: 2022/06/07 12:22:26 by rbutarbu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_is_prime(int nb)
 {
 	int i;
-	int count;
 
-	i = 1;
-	if (nb < 2)
-	{
+	i = 2;
+	if (nb <= 1)
 		return (0);
-	}
-	if (nb == 2 || nb == 3)
+	while (i <= (nb / i))
 	{
-		return (nb);
-	}
-	while (i <= nb / 2)
-	{
-		i++;
 		if (nb % i == 0)
-		{
 			return (0);
-		}
+		else
+			i++;
 	}
 	return (1);
 }

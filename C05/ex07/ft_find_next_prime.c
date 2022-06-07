@@ -3,47 +3,38 @@
 /*                                                        :::      ::::::::   */
 /*   ft_find_next_prime.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lhurt <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: rbutarbu <rbutarbu@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/07/16 16:01:39 by lhurt             #+#    #+#             */
-/*   Updated: 2016/07/16 16:01:42 by lhurt            ###   ########.fr       */
+/*   Created: 2022/06/07 12:04:15 by rbutarbu          #+#    #+#             */
+/*   Updated: 2022/06/07 12:44:31 by rbutarbu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	is_prime(int nb)
+int	ft_is_prime(int nb)
 {
-	int i;
-	int count;
+	int	i;
 
-	i = 1;
+	i = 2;
 	if (nb < 2)
-	{
 		return (0);
-	}
-	if (nb == 2 || nb == 3)
+	while (i <= nb / i)
 	{
-		return (nb);
-	}
-	while (i <= nb / 2)
-	{
-		i++;
 		if (nb % i == 0)
-		{
 			return (0);
-		}
+		i++;
 	}
 	return (1);
 }
 
 int	ft_find_next_prime(int nb)
 {
-	int a;
-
-	a = 0;
-	while (a != 1)
+	if (nb < 2)
+		return (2);
+	while (nb >= 2)
 	{
-		a = is_prime(nb);
+		if (ft_is_prime(nb) == 1)
+			return (nb);
 		nb++;
 	}
-	return (nb - 1);
+	return (0);
 }

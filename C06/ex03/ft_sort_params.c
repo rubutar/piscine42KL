@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_sort_params.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rbutarbu <rbutarbu@student.42kl.edu.my>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/06/06 12:38:29 by rbutarbu          #+#    #+#             */
+/*   Updated: 2022/06/06 13:16:21 by rbutarbu         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 #include <unistd.h>
 
 void	ft_putchar(char c)
@@ -50,10 +61,7 @@ int	main(int argc, char **argv)
 		while (j < argc - 1)
 		{
 			if (ft_strcmp(argv[j], argv[j + 1]) > 0)
-			{
 				ft_swap(&argv[j], &argv[j + 1]);
-
-			}
 		j++;
 		}
 	tocomp++;
@@ -63,7 +71,7 @@ int	main(int argc, char **argv)
 	{
 		ft_putstr(argv[j]);
 		ft_putchar('\n');
-		j++;
+	j++;
 	}
 	return (0);
 }

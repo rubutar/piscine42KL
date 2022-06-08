@@ -13,4 +13,5 @@ int	main()
 	printf("%d\n", ft_sqrt(12));
 	printf("%d\n", ft_sqrt(16));
 	printf("%d\n", ft_sqrt(100));
+	printf("%d\n", ft_sqrt(2147483647));
 }

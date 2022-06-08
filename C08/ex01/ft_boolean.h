@@ -6,7 +6,7 @@
 /*   By: rbutarbu <rbutarbu@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/07 23:32:07 by rbutarbu          #+#    #+#             */
-/*   Updated: 2022/06/08 09:36:03 by rbutarbu         ###   ########.fr       */
+/*   Updated: 2022/06/08 13:15:44 by rbutarbu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,10 @@
 
 # include <unistd.h>
 
-typedef enum {false, true} t_bool;
+typedef enum a_bool{
+	false = 0,
+	true = 1,
+}	t_bool;
 
 # define FALSE false
 # define TRUE true
@@ -24,4 +27,3 @@ typedef enum {false, true} t_bool;
 # define ODD_MSG "I have an odd number of arguments.\n"
 # define SUCCESS 0
 #endif
-

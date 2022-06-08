@@ -6,7 +6,7 @@
 /*   By: rbutarbu <rbutarbu@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/07 23:41:53 by rbutarbu          #+#    #+#             */
-/*   Updated: 2022/06/07 23:42:06 by rbutarbu         ###   ########.fr       */
+/*   Updated: 2022/06/08 10:14:15 by rbutarbu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,4 +20,3 @@ typedef struct s_point
 }				t_point;
 
 #endif
-

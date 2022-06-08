@@ -6,14 +6,14 @@
 /*   By: rbutarbu <rbutarbu@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/07 23:37:13 by rbutarbu          #+#    #+#             */
-/*   Updated: 2022/06/07 23:37:17 by rbutarbu         ###   ########.fr       */
+/*   Updated: 2022/06/08 09:53:03 by rbutarbu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_ABS_H
 # define FT_ABS_H
 
-# define ABS(Value) (Value < 0 ? -Value : Value)
+# define ABS(x) (x < 0 ? -(x) : x)
 
 #endif
 

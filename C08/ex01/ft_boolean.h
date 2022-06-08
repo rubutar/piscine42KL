@@ -6,7 +6,7 @@
 /*   By: rbutarbu <rbutarbu@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/07 23:32:07 by rbutarbu          #+#    #+#             */
-/*   Updated: 2022/06/07 23:33:47 by rbutarbu         ###   ########.fr       */
+/*   Updated: 2022/06/08 09:36:03 by rbutarbu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,7 @@
 
 # include <unistd.h>
 
-typedef enum a_bool{
-	false = 0,
-	true = 1,
-}	t_bool;
+typedef enum {false, true} t_bool;
 
 # define FALSE false
 # define TRUE true

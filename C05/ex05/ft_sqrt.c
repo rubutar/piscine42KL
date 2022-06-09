@@ -10,23 +10,17 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	find_sqrt(int n, int nb)
-{
-	if (n * n > nb)
-	{
-		return (0);
-	}
-	if (n * n == nb)
-	{
-		return (n);
-	}
-	else
-	{
-		return (find_sqrt(n + 1, nb));
-	}
-}
-
 int	ft_sqrt(int nb)
 {
-	return (find_sqrt(1, nb));
+	long int	index;
+
+	index = 1;
+	if (nb == 0)
+		return (0);
+	while (nb > index * index)
+		index++;
+	if (nb == index * index)
+		return (index);
+	else
+		return (0);
 }

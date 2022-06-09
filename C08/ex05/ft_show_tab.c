@@ -6,7 +6,7 @@
 /*   By: rbutarbu <rbutarbu@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/08 09:12:43 by rbutarbu          #+#    #+#             */
-/*   Updated: 2022/06/08 09:13:04 by rbutarbu         ###   ########.fr       */
+/*   Updated: 2022/06/09 09:54:39 by rbutarbu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,9 +67,3 @@ void	ft_show_tab(struct s_stock_str *par)
 		index++;
 	}
 }
-
-int	main(int argc, char **argv)
-{
-	ft_show_tab(ft_strs_to_tab(argc, argv));
-}
-
